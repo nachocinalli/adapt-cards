@@ -1,17 +1,20 @@
 {
-  "name": "adapt-cards",
-  "version": "1.0.0",
-  "framework": ">=5.14.0",
-  "homepage": "https://github.com/nachocinalli/adapt-cards",
-  "issues": "https://github.com/nachocinalli/adapt-cards/issues",
-  "component": "cards",
-  "description": "A card component",
-  "main": "/js/adapt-cards.js",
-  "displayName": "Cards",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/nachocinalli/adapt-cards.git"
-  },
-  "keywords": ["adapt-plugin", "adapt-component"],
-  "license": "GPLv3"
+    "name": "adapt-cards",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/nachocinalli/adapt-cards.git"
+    },
+    "framework": ">=5.14.0",
+    "version": "1.0.0",
+    "homepage": "https://github.com/nachocinalli/adapt-cards",
+    "issues": "https://github.com/nachocinalli/adapt-cards/issues",
+    "component": "cards",
+    "description": "A card component",
+    "main": "/js/adapt-cards.js",
+    "displayName": "Cards",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
 }
