@@ -1,0 +1,74 @@
+{
+  "_id": "c-05",
+  "_parentId": "b-05",
+  "_type": "component",
+  "_component": "cards",
+  "_classes": "",
+  "_layout": "full",
+  "title": "Cards",
+  "displayTitle": "Cards",
+  "body": "<p>Cards is a presentation component that displays an image and text in a card format. More text is revealed when the user clicks on the open button.",
+  "instruction": "",
+  "_setCompletionOn": "allItems",
+  "_animateItems": true,
+  "_percentInviewVertical": 10,
+  "_transitionSpeed": 200,
+  "_items": [
+    {
+      "title": "Heading 1",
+      "body": "<p>This is display text 1.</p>",
+      "_graphic": {
+        "src": "course/en/images/single-width.png",
+        "alt": "graphic 1"
+      },
+      "_hasAction": true,
+      "_buttons": {
+        "_open": {
+          "buttonText": "Open",
+          "ariaLabel": "Select here to show more."
+        },
+        "_close": {
+          "buttonText": "Close",
+          "ariaLabel": "Select here to close."
+        }
+      },
+      "description": {
+        "title": "Description Heading 1",
+        "body": "<p>Description body 1</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        }
+      },
+      "_classes": ""
+    },
+    {
+      "title": "Heading 2",
+      "body": "<p>This is display text 2.</p>",
+      "_graphic": {
+        "src": "course/en/images/single-width.png",
+        "alt": "graphic 2"
+      },
+      "_hasAction": true,
+      "_buttons": {
+        "_open": {
+          "buttonText": "Open",
+          "ariaLabel": "Select here to show more."
+        },
+        "_close": {
+          "buttonText": "Close",
+          "ariaLabel": "Select here to close."
+        }
+      },
+      "description": {
+        "title": "Description Heading 2",
+        "body": "<p>Description body 2</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        }
+      },
+      "_classes": ""
+    }
+  ]
+}
