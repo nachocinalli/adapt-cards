@@ -1,10 +1,4 @@
 .cards {
-  &__widget {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 1rem;
-  }
-
   &__widget > * {
     margin: 0;
   }
@@ -16,20 +10,21 @@
     margin: 1rem 0;
     position: relative;
   }
-
   &__item-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
     flex: 1;
   }
   &__item-title,
   &__item-description-title {
-    margin-top: 1rem;
+    margin: 0.5rem;
   }
-  &__item-title,
   &__item-body,
+  &__item-description-body {
+    margin: 0 0.5rem 0.5rem;
+  }
+
   &__item-toolbar {
     padding: 0 0.5rem;
   }
@@ -41,9 +36,9 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 4.5rem;
+    bottom: 3rem;
     overflow-y: auto;
-    padding: 1rem;
+    padding: 0;
     margin: 0;
     background-color: #ffffff;
   }
@@ -68,6 +63,18 @@
       .cards__item-description {
         opacity: 1;
       }
+    }
+  }
+  &__item-actions,
+  &__item-state {
+    position: relative;
+  }
+  /*theme*/
+  &.cols-2 {
+    .cards__widget {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-gap: 1rem;
     }
   }
 }
