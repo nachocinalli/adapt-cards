@@ -62,6 +62,16 @@
 			"help": "Animate the items into view",
 			"translatable": false
 		},
+		"_hasClickButton": {
+			"type": "boolean",
+			"required": false,
+			"default": true,
+			"title": "Click on button",
+			"inputType": "Checkbox",
+			"validators": [],
+			"help": "Assigns the click event to the button or to the whole card",
+			"translatable": false
+		},
 		"_percentInviewVertical": {
 			"type": "number",
 			"required": false,
@@ -85,6 +95,15 @@
 				"number"
 			],
 			"help": ""
+		},
+		"_columns": {
+			"type": "number",
+			"required": false,
+			"default": 0,
+			"title": "Columns",
+			"inputType": "Number",
+			"validators": ["number"],
+			"help": "Set the number of columns. If value is '0', component uses the default layout."
 		},
 		"_items": {
 			"type": "array",

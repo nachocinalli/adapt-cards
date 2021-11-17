@@ -38,6 +38,12 @@
           "title": "Animate Items",
           "description": "Animate the items into view"
         },
+        "_hasClickButton": {
+          "type": "boolean",
+          "default": true,
+          "title": "Click on button",
+          "description": "Assigns the click event to the button or to the whole card"
+        },
         "_percentInviewVertical": {
           "type": "number",
           "title": "Percent in view",
@@ -48,6 +54,11 @@
           "type": "number",
           "title": "Transition speed",
           "default": 200
+        },
+        "_columns": {
+          "type": "number",
+          "title": "Columns",
+          "default": 0
         },
         "_items": {
           "type": "array",
