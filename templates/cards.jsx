@@ -30,6 +30,7 @@ export default function Cards (props) {
               _isActive && 'is-active',
               _isAnimated && 'is-animating',
               _graphic.src && 'has-image',
+              !_hasClickButton && 'is-clickable',
               !_hasClickButton && _hasAction && 'has-action',
               _classes
             ])}
@@ -79,7 +80,7 @@ export default function Cards (props) {
                   }
                 </div>
 
-                {_hasAction && <div className="cards__item-actions">
+                {_hasAction && _hasClickButton && <div className="cards__item-actions">
                   <button
                     onClick={_hasClickButton ? onClick : null}
                     onKeyDown={onKeyDown}

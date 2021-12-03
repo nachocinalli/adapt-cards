@@ -68,6 +68,19 @@
     &.has-action{
       cursor: pointer;
     }
+    &.is-clickable{
+      .cards__item-toolbar {
+        visibility: hidden;
+      }
+      .cards__item-description {
+        bottom: 1.5rem;
+      }
+      &.is-active{
+       .cards__item-toolbar {
+         visibility: visible;
+        }
+      }
+    }
   }
   &__item-actions,
   &__item-state {

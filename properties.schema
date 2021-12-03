@@ -115,13 +115,11 @@
 				"properties": {
 					"title": {
 						"type": "string",
-						"required": true,
+						"required": false,
 						"inputType": "Text",
 						"title": "Item title",
 						"default": "",
-						"validators": [
-							"required"
-						],
+						"validators": [],
 						"help": "This is the item text",
 						"translatable": true
 					},
