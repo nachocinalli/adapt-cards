@@ -20,14 +20,15 @@ class CardsView extends ComponentView {
     this.$('.cards__widget').imageready(() => {
       this.setReadyStatus();
     });
-    this.setupItems();
-
     if (this.model.get('_animateItems')) {
       this.$('.cards__widget').on('onscreen.animate', this.checkIfOnScreen.bind(this));
     }
 
-    if (this.model.get('_setCompletionOn') !== 'inview') return;
-    this.setupInviewCompletion();
+    if (this.model.get('_setCompletionOn') !== 'inview') {
+      this.setupItems();
+    } else {
+      this.setupInviewCompletion();
+    }
 
   }
 
