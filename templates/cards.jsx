@@ -6,11 +6,12 @@ export default function Cards (props) {
   const {
     _hasClickButton,
     _columns,
+    _itemMinHeight,
     onKeyDown,
     onClick
   } = props;
   const hasColumns = _columns > 1;
-
+  const hasMinHeight = Number(_itemMinHeight) > 0;
   return (
 
     <div className="component__inner cards__inner">
@@ -37,10 +38,10 @@ export default function Cards (props) {
             key={_index}
             data-index={_index}
             onClick={!_hasClickButton && _hasAction ? onClick : null}
-            style={(hasColumns && Adapt.device.screenSize === 'large' && { width: `${100 / _columns}%` }) || null}
+            style={(hasColumns && Adapt.device.screenSize === 'large' && { width: `${100 / _columns}%` }) || null }
           >
-            <div className="cards__item-inner">
-              <div className="cards__item-container">
+            <div className="cards__item-inner" style={(hasMinHeight && { minHeight: _itemMinHeight + 'px' }) || null}>
+              <div className="cards__item-container" >
                 { _graphic.src &&
               <templates.image {..._graphic}
                 classNamePrefixes={['cards__item']}

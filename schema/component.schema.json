@@ -60,6 +60,21 @@
           "title": "Columns",
           "default": 0
         },
+        "_itemMinHeight": {
+          "type": "number",
+          "title": "Item min height",
+          "default": 0
+        },
+        "_autoSetHeight": {
+          "type": "boolean",
+          "title": "Auto set height",
+          "default": false
+        },
+        "_scrollPadding": {
+          "type": "number",
+          "title": "Scroll padding",
+          "default": 0
+        },
         "_items": {
           "type": "array",
           "title": "Items",

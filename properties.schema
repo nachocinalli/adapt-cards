@@ -105,6 +105,33 @@
 			"validators": ["number"],
 			"help": "Set the number of columns. If value is '0', component uses the default layout."
 		},
+		"_itemMinHeight": {
+			"type": "number",
+			"required": false,
+			"default": 0,
+			"title": "Item min height",
+			"inputType": "Number",
+			"validators": ["number"],
+			"help": "Set the minimum height of the items. If value is '0', component uses the default layout."
+		},
+		"_autoSetHeight": {
+			"type": "boolean",
+			"required": false,
+			"default": false,
+			"title": "Auto set height",
+			"inputType": "Checkbox",
+			"validators": [],
+			"help": "Automatically set the height of the items using the scrollHeight value of the item description"
+		},
+		"_scrollPadding": {
+			"type": "number",
+			"required": false,
+			"default": 0,
+			"title": "Scroll padding",
+			"inputType": "Number",
+			"validators": ["number"],
+			"help": "Set the padding of the scroll container"
+		},
 		"_items": {
 			"type": "array",
 			"required": true,

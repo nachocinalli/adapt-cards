@@ -1,5 +1,4 @@
 import ComponentView from 'core/js/views/componentView';
-
 class CardsView extends ComponentView {
   className() {
     let classes = super.className();
@@ -19,6 +18,9 @@ class CardsView extends ComponentView {
   postRender() {
     this.$('.cards__widget').imageready(() => {
       this.setReadyStatus();
+      if (this.model.get('_autoSetHeight')) {
+        this.setHeight();
+      }
     });
     if (this.model.get('_animateItems')) {
       this.$('.cards__widget').on('onscreen.animate', this.checkIfOnScreen.bind(this));
@@ -30,6 +32,20 @@ class CardsView extends ComponentView {
       this.setupInviewCompletion();
     }
 
+  }
+
+  setHeight() {
+    const $collection = $(this.el).find('.cards__item-description');
+    const maxHeight = this.getMaxScrollHeight($collection) + this.model.get('_scrollPadding');
+    $(this.el).find('.cards__item').css({ height: maxHeight });
+  }
+
+  getMaxScrollHeight($collection) {
+    let maxHeight = 0;
+    $collection.each(function() {
+      maxHeight = Math.max(maxHeight, $(this)[0].scrollHeight);
+    });
+    return maxHeight;
   }
 
   checkIfOnScreen({ currentTarget }, { percentInviewVertical }) {
