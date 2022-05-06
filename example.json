@@ -13,6 +13,10 @@
   "_animateItems": true,
   "_percentInviewVertical": 10,
   "_transitionSpeed": 200,
+  "_columns": 4,
+  "_itemMinHeight": 0,
+  "_autoSetHeight": false,
+  "_scrollPadding": 0,
   "_items": [
     {
       "title": "Heading 1",
