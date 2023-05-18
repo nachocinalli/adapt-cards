@@ -56,9 +56,30 @@
           "default": 200
         },
         "_columns": {
-          "type": "number",
+          "type": "object",
           "title": "Columns",
-          "default": 0
+          "default": {},
+          "properties": {
+            "small": {
+              "type": "number",
+              "title": "Small",
+              "default": 0
+            },
+            "medium": {
+              "type": "number",
+              "title": "Medium",
+              "default": 0
+            },
+            "large": {
+              "type": "number",
+              "title": "Large",
+              "default": 0
+            },
+            "xlarge": {
+              "type": "number",
+              "title": "Xlarge",
+              "default": 0
+            }
         },
         "_itemMinHeight": {
           "type": "number",

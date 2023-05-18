@@ -9,11 +9,17 @@
   "displayTitle": "Cards",
   "body": "<p>Cards is a presentation component that displays an image and text in a card format. More text is revealed when the user clicks on the open button.",
   "instruction": "",
+  "_hasClickButton": false,
   "_setCompletionOn": "allItems",
   "_animateItems": true,
   "_percentInviewVertical": 10,
   "_transitionSpeed": 200,
-  "_columns": 4,
+  "_columns": {
+    "small": 0,
+    "medium": 0,
+    "large": 0,
+    "xlarge": 0
+  },
   "_itemMinHeight": 0,
   "_autoSetHeight": false,
   "_scrollPadding": 0,

@@ -97,13 +97,48 @@
 			"help": ""
 		},
 		"_columns": {
-			"type": "number",
+			"type": "object",
 			"required": false,
-			"default": 0,
+
 			"title": "Columns",
-			"inputType": "Number",
-			"validators": ["number"],
-			"help": "Set the number of columns. If value is '0', component uses the default layout."
+			"properties": {
+				"small": {
+					"type": "number",
+					"required": false,
+					"default": 0,
+					"title": "Small",
+					"inputType": "Number",
+					"validators": ["number"],
+					"help": "Number of columns on small screens"
+				},
+				"medium": {
+					"type": "number",
+					"required": false,
+					"default": 0,
+					"title": "Medium",
+					"inputType": "Number",
+					"validators": ["number"],
+					"help": "Number of columns on medium screens"
+				},
+				"large": {
+					"type": "number",
+					"required": false,
+					"default": 0,
+					"title": "Large",
+					"inputType": "Number",
+					"validators": ["number"],
+					"help": "Number of columns on large screens"
+				},
+				"xlarge": {
+					"type": "number",
+					"required": false,
+					"default": 0,
+					"title": "Xlarge",
+					"inputType": "Number",
+					"validators": ["number"],
+					"help": "Number of columns on xlarge screens"
+				}
+			}
 		},
 		"_itemMinHeight": {
 			"type": "number",

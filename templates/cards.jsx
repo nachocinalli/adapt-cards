@@ -1,4 +1,4 @@
-import Adapt from 'core/js/adapt';
+import device from 'core/js/device';
 import React from 'react';
 import { html, classes, compile, templates } from 'core/js/reactHelpers';
 
@@ -10,8 +10,10 @@ export default function Cards (props) {
     onKeyDown,
     onClick
   } = props;
-  const hasColumns = _columns > 1;
+  const screenSize = device.screenSize;
+  const hasColumns = _columns[screenSize] > 1;
   const hasMinHeight = Number(_itemMinHeight) > 0;
+
   return (
 
     <div className="component__inner cards__inner">
@@ -38,7 +40,7 @@ export default function Cards (props) {
             key={_index}
             data-index={_index}
             onClick={!_hasClickButton && _hasAction ? onClick : null}
-            style={(hasColumns && Adapt.device.screenSize === 'large' && { width: `${100 / _columns}%` }) || null }
+            style={(hasColumns && { width: `${100 / _columns[screenSize]}%` }) || null }
           >
             <div className="cards__item-inner" style={(hasMinHeight && { minHeight: _itemMinHeight + 'px' }) || null}>
               <div className="cards__item-container" >
