@@ -1,8 +1,8 @@
-import Adapt from 'core/js/adapt';
+import components from 'core/js/components';
 import CardsModel from './CardsModel';
 import CardsView from './CardsView';
 
-export default Adapt.register('cards', {
+export default components.register('cards', {
   model: CardsModel,
   view: CardsView
 });
