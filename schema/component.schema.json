@@ -80,6 +80,7 @@
               "title": "Xlarge",
               "default": 0
             }
+          }
         },
         "_itemMinHeight": {
           "type": "number",
