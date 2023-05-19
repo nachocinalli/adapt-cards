@@ -1,0 +1,21 @@
+{
+  "name": "adapt-cards",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nachocinalli/adapt-cards.git"
+  },
+  "framework": ">=5.31.4",
+  "version": "1.2.0",
+  "homepage": "https://github.com/nachocinalli/adapt-cards",
+  "issues": "https://github.com/nachocinalli/adapt-cards/issues",
+  "component": "cards",
+  "displayName": "Cards",
+  "targetAttribute": "_cards",
+  "description": "A card component.",
+  "main": "/js/adapt-cards.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}
