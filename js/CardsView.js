@@ -27,11 +27,10 @@ class CardsView extends ComponentView {
     }
 
     if (this.model.get('_setCompletionOn') !== 'inview') {
-      this.setupItems();
+      this.setupInviewCompletion('.component__inner', this.setupItems);
     } else {
       this.setupInviewCompletion();
     }
-
   }
 
   setHeight() {
@@ -42,7 +41,7 @@ class CardsView extends ComponentView {
 
   getMaxScrollHeight($collection) {
     let maxHeight = 0;
-    $collection.each(function() {
+    $collection.each(function () {
       maxHeight = Math.max(maxHeight, $(this)[0].scrollHeight);
     });
     return maxHeight;
@@ -66,7 +65,7 @@ class CardsView extends ComponentView {
   animateItems() {
     const _transitionSpeed = this.model.get('_transitionSpeed');
     this.model.getChildren().forEach((item, index) => {
-      setTimeout(() => item.set('_isAnimated', true), (_transitionSpeed * index));
+      setTimeout(() => item.set('_isAnimated', true), _transitionSpeed * index);
     });
   }
 
